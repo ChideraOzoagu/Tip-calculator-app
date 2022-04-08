@@ -1,0 +1,176 @@
+:root {
+    --strongcyan: hsl(172, 67%, 45%);
+--verydarkcyan: hsl(183, 100%, 15%);
+--darkgrayishcyan: hsl(186, 14%, 43%);
+--grayishcyan: hsl(184, 14%, 56%);
+--lightgrayishcyan: hsl(185, 41%, 84%);
+--verylightgrayishcyan: hsl(189, 41%, 97%);
+--white: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(185, 41%, 84%);
+    /* font-size: 20px; */
+    font-family: 'Space Mono', monospace ;
+}
+h3 {
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    color: hsl(183, 100%, 15%);
+}
+header {
+    padding: 10px 0;
+}
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.title {
+    font-size: 1rem;
+    color: hsl(186, 14%, 43%);
+    padding: 10px 0;
+}
+.bill {
+    background: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(189, 41%, 97%);
+    background-position: 5%;
+    padding: 8px 5px;
+    text-align: right;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    color: hsl(183, 100%, 15%);
+    font-weight: 800;
+}
+.bill:focus {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+article {
+    margin: 10px 0;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px
+}
+.darkcyan {
+    padding: 5px 10px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    color:hsl(0, 0%, 100%);
+    font-weight: 800;
+}
+.darkcyan:hover {
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+.lightcyan {
+    background-color: hsl(172, 67%, 45%);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color:hsl(183, 100%, 15%);
+    font-weight: 800;
+}
+.custom {
+    width: 100%;
+    text-align: center; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 800;
+}
+.custom:focus {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+.people {
+    background: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(189, 41%, 97%);
+    background-position: 5%;
+    padding: 8px 5px;
+    text-align: right;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    color: hsl(183, 100%, 15%);
+    font-weight: 800;
+}
+.people:focus {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.reset {
+    width: 100%;
+    background-color: hsl(172, 67%, 45%);
+    padding: 10px 0;
+    border-radius: 10px;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    margin-top: 15px;
+}
+footer {
+    background-color: hsl(183, 100%, 15%);
+    padding: 15px;
+    border-radius: 10px;
+}
+.flex > div > p:first-child {
+    color:hsl(0, 0%, 100%);
+}
+.flex >p:nth-child(2) {
+    color:hsl(172, 67%, 45%);
+    font-size: 20px;
+}
+small {
+    color:hsl(186, 14%, 43%);
+}
+
+@media screen and (min-width: 468px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        max-width: 600px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    section {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        padding: 20px;
+    }
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .flex {
+        padding: 10px 0;
+    }
+    .reset {
+        margin-top: 100px
+    }
+}
