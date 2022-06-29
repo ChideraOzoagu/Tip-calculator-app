@@ -82,6 +82,7 @@ function resetFunc() {
 
   percentBtns.forEach(function (btn) {
     btn.classList.remove("active");
+    percent = '';
   });
   
 }
