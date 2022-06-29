@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header>
+      <h3>SPLI</h3>
+      <h3>TTER</h3>
+    </header>
+    <main>
+      <section>
+        <article class="input-control">
+          <div class="sub-heading">
+            <p class="title">Bill</p>
+            <small></small>
+          </div>
+          <input type="text" placeholder="0" class="bill" />
+        </article>
+        <article>
+          <p class="title">Select Tip %</p>
+          <div class="grid">
+            <button class="percent-btn">5%</button>
+            <button class="percent-btn">10%</button>
+            <button class="percent-btn">15%</button>
+            <button class="percent-btn">25%</button>
+            <button class="percent-btn">50%</button>
+            <input type="text" placeholder="Custom" class="custom" />
+          </div>
+        </article>
+        <article class="input-control">
+          <div class="sub-heading">
+            <p class="title">Number of People</p>
+            <small></small>
+          </div>
+          <input type="text" placeholder="0" class="people" />
+        </article>
+      </section>
+      <footer>
+        <div class="flex">
+          <div>
+            <p>Tip Amount</p>
+            <small>/ person</small>
+          </div>
+          <p class="tip-amount">$0.00</p>
+        </div>
+
+        <div class="flex">
+          <div>
+            <p>Total</p>
+            <small>/ person</small>
+          </div>
+          <p class="total-amount">$0.00</p>
+        </div>
+        <button type="reset" class="reset">RESET</button>
+      </footer>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
