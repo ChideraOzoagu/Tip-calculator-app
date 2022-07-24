@@ -1,9 +1,7 @@
 class Calculator {
-  constructor(tipAmountPerPerson, totalPerPerson) {
+  constructor() {
     this.tipAmount = tipAmountPerPerson;
-    this.tipAmount.innerText = `$${(0).toFixed(2)}` 
     this.totalAmount = totalPerPerson;
-    this.totalAmount.innerText =  `$${(0).toFixed(2)}`
   }
   getBill() {
     this.bill = parseFloat(billInput.value);
@@ -52,6 +50,8 @@ class Calculator {
   resetValues() {
     billInput.value = "";
     peopleInput.value = "";
+    this.bill = ''
+    this.people = ''
     customInput.value = '';
     percentageBtns.forEach((clearBtn) => {
       clearBtn.classList.remove("active");
@@ -60,6 +60,7 @@ class Calculator {
     this.tipAmount.innerText = `$${(0).toFixed(2)}` 
     this.totalAmount.innerText =  `$${(0).toFixed(2)}`
   }
+ 
 }
 
 const billInput = document.querySelector(".bill");
@@ -70,7 +71,7 @@ const tipAmountPerPerson = document.querySelector(".tip-amount");
 const totalPerPerson = document.querySelector(".total-amount");
 const resetBtn = document.querySelector(".reset");
 
-const calculator = new Calculator(tipAmountPerPerson, totalPerPerson);
+const calculator = new Calculator();
 
 billInput.addEventListener("input", () => {
   calculator.getBill();
