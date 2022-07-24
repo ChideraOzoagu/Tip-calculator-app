@@ -18,6 +18,7 @@ body {
     /* font-size: 20px; */
     font-family: 'Space Mono', monospace ;
 }
+
 h3 {
     text-align: center;
     line-height: 1.5;
@@ -74,6 +75,7 @@ article {
     border-radius: 5px;
     color:hsl(185, 41%, 84%);
     font-weight: 800;
+    outline: none;
 }
 .percent-btn:hover {
     background-color: hsl(185, 41%, 84%);
@@ -138,6 +140,7 @@ article {
     color: hsl(183, 100%, 15%);
     font-weight: 700;
     margin-top: 15px;
+    outline: none;
 }
 .reset:hover {
     background-color: hsl(185, 41%, 84%);
@@ -164,18 +167,29 @@ small {
     background-color: hsl(172, 67%, 45%);
 }
 .error-text {
-    color: rgba(255, 0, 0, 0.6);
+    color: red;
 }
 .error input {
-    border: 2px solid rgba(255, 0, 0, 0.6);
+    border: 2px solid red;
 }
 .success input {
-    border: 2px solid hsl(172, 67%, 45%);
+    border: none;
 }
 .sub-heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 @media screen and (min-width: 500px) {
     body {
@@ -210,4 +224,5 @@ small {
     .reset {
         margin-top: 100px
     }
+    
 }
